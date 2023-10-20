@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ghostwhite;
+  color: black;
+  border-bottom: 1px solid black;
+  z-index: 2;
+}
+
+.nav__btn {
+  width: 42px;
+  height: 38px;
+  border: 1.3px solid blue;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px;
+}
+
+.nav__bars {
+  font-size: 20px;
+}
+.back {
+  font-size: 32px;
+  color: gray;
+}
+
+.navbar-logo {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: blue;
+  margin: 20px 35px;
+}
+
+.cd-dropdown {
+  position: fixed;
+  background-color: white;
+  border-right: 2px solid black;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 100%;
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+.cd-dropdown.dropdown-is-active {
+  transform: translateX(0);
+}
+
+.nav__header {
+  width: 80%;
+  height: 60px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 35px 0 20px;
+  border-bottom: 1.5px solid black;
+}
+
+.nav__title {
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+.cd-dropdown > .nav__item {
+  margin: 13.5px 0;
+  width: 80%;
+  text-decoration: none;
+  list-style: none;
+}
+
+.cd-dropdown > .nav__item > .nav__link {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: gray;
+}
+
+.nav__footer {
+  width: 80%;
+  height: 60px;
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0 35px;
+  border-top: 1.5px solid black;
+}
+
+.nav__auth {
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 20px;
+}
+
+.nav__signup {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #496ff5;
+}
+
+.nav__login {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bolder;
+  border: 1px solid #496ff5;
+  border-radius: 8px;
+  color: #496ff5;
+  background-color: white;
+}
+
+.nav__contact {
+  color: grey;
+  margin: 10px 0 0;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav__contact > div {
+  margin: 0 7px;
+  color: black;
+}
+
+.nav__social {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav__social-icon {
+  color: #496ff5;
+  font-size: 28px;
+}
